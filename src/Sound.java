@@ -1,5 +1,8 @@
 // Copyright GM.
 
+// Credit to GHET1 for Bangarang samples.
+// Credit to SoNevable for First of the Year samples.
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
@@ -50,7 +53,6 @@ public class Sound {
 		clips[index].stop();
 		clips[index].flush();
 		clips[index].setFramePosition(0);
-		System.out.println(clips[index].getFramePosition()); //why does this prevent skipping sounds?
 	}
 	
 	public static void stop() {

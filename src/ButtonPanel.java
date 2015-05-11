@@ -15,7 +15,6 @@ public class ButtonPanel extends JPanel implements KeyListener {
 	private LaunchpadButton[] buttons = new LaunchpadButton[32];
 	private String keys = "12345678qwertyuiasdfghjkzxcvbnm,";
 	Set<Character> pressed = new TreeSet<Character>();
-	// what the is a set or treeset
 
 	public ButtonPanel() {
 		setLayout(new GridLayout(4, 8, 10, 10));
