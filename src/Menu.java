@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -21,6 +22,7 @@ public class Menu extends JPanel {
 	ImageIcon bgIcon = new ImageIcon(Menu.class.getResource("img/bg.jpg"));
 	Image bg = bgIcon.getImage();
 	JLabel logo;
+	ArrayList<JButton> buttons = new ArrayList<JButton>();
 	JButton firstOfTheYear;
 	JButton bangarang;
 	
@@ -28,51 +30,41 @@ public class Menu extends JPanel {
 	
 	public Menu(Control control) {
 		super();
-		reference = control;
+		reference = control; // needed to call method of Control object
 		setBackground(Color.WHITE);
 		setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+		
 		logo = new JLabel(logoImg);
-		firstOfTheYear = new JButton("First of the Year");
-		bangarang = new JButton("Bangarang");
-		
 		logo.setAlignmentX(JLabel.CENTER_ALIGNMENT);
-		firstOfTheYear.setAlignmentX(JButton.CENTER_ALIGNMENT);
-		bangarang.setAlignmentX(JButton.CENTER_ALIGNMENT);
-
-		firstOfTheYear.setPreferredSize(new Dimension(800, 100));
-		firstOfTheYear.setMaximumSize(new Dimension(800, 100));
-		//firstOfTheYear.setBackground(Color.BLACK);
-		//firstOfTheYear.setFont(Font.getFont("0"));
 		
-		bangarang.setPreferredSize(new Dimension(800, 100));
-		bangarang.setMaximumSize(new Dimension(800, 100));
-
-		
-		firstOfTheYear.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e) {
-				reference.start("foty");
-			}
-		});
-		
-		bangarang.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e) {
-				reference.start("bangarang");
-			}
-		});
+		// Use newButton to add songs
+		// Usage: newButton(title of song, name of folder containing sound files)
+		newButton("First of the Year", "foty");
+		newButton("Bangarang", "bangarang");
 		
 		add(logo);
-		add(Box.createVerticalGlue());
-		add(firstOfTheYear);
-		add(Box.createVerticalGlue());
-		add(bangarang);
-		
-		firstOfTheYear.setFocusable(false);
-		bangarang.setFocusable(false);
+		for (JButton button : buttons) {
+			add(Box.createVerticalGlue());
+			add(button);
+		}
 		
 		setBorder(new EmptyBorder(60, 0, 60, 0));
-
 		setPreferredSize(new Dimension(Control.lWidth(), Control.lHeight()));
 		setFocusable(false);
+	}
+	
+	public void newButton(String title, String folder) {
+		JButton button = new JButton(title);
+		button.setAlignmentX(JButton.CENTER_ALIGNMENT);
+		button.setPreferredSize(new Dimension(800, 100));
+		button.setMaximumSize(new Dimension(800, 100));
+		button.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				reference.start(folder);
+			}
+		});
+		button.setFocusable(false);
+		buttons.add(button);
 	}
 	
 	@Override
