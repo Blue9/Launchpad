@@ -38,6 +38,6 @@ Each sound file will consist of 2 characters. The first character will refer to 
     - 2 - Loaded by pressing left arrow key.
 For example:
 - "10.wav" will be played when set 0 is loaded (default) and when the '1' key is pressed.
-- ",2.wav" will be played when set 2 is loaded (right arrow key) and when the ',' key is pressed.
+- ",2.wav" will be played when set 2 is loaded (left arrow key) and when the ',' key is pressed.
 
 Note: When compiling, make sure the file paths in `Sound.java`, `Menu.java`, and `LaunchpadButton.java` are correct.
