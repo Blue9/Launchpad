@@ -1,4 +1,5 @@
 // Copyright GM.
+// bg.jpg acquired from http://sandeep-m.deviantart.com/art/recycled-texture-background-380260449
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -37,7 +38,7 @@ public class Menu extends JPanel {
 		logo = new JLabel(logoImg);
 		logo.setAlignmentX(JLabel.CENTER_ALIGNMENT);
 		
-		// Use newButton to add songs
+		// Call newButton() here.
 		// Usage: newButton(title of song, name of folder containing sound files)
 		newButton("First of the Year", "foty");
 		newButton("Bangarang", "bangarang");
