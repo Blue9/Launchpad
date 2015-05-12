@@ -24,6 +24,7 @@ public class Sound {
 					try {
 						clips[index].open(AudioSystem.getAudioInputStream(Sound.class.getResourceAsStream("aud/" + song + "/" + keys.charAt(j) + i + ".wav")));
 					} catch (Exception e) {
+						System.out.println("aud/" + song + "/" + keys.charAt(j) + i + ".wav not loaded");
 					}
 				}
 			}

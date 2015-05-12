@@ -37,7 +37,6 @@ public class Control extends JFrame {
 		launchpad.requestFocusInWindow();
 		pack();
 		repaint();
-
 	}
 	
 	public static int height() {

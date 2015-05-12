@@ -24,7 +24,7 @@ public class Launchpad extends JPanel {
 	}
 
 	public void init(String song) {
-		if (song.equals("")) {
+		if (song.equals("")) {        // Default to First of th Year
 			Sound.init("foty");
 		}
 		else {
