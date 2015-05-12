@@ -24,8 +24,6 @@ public class Menu extends JPanel {
 	Image bg = bgIcon.getImage();
 	JLabel logo;
 	ArrayList<JButton> buttons = new ArrayList<JButton>();
-	JButton firstOfTheYear;
-	JButton bangarang;
 	
 	Control reference;
 	
