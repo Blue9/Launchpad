@@ -1,6 +1,13 @@
 # Launchpad
 A mini-replica of the Novation Launchpad built using Java.
 
+Disclaimer: This project is neither affiliated with nor endorsed by Novation Digital Music Systems.
+
+Screenshots:
+-
+![Menu](https://raw.githubusercontent.com/Blue9/Launchpad/master/screenshots/Menu.png "Launchpad Menu")  
+![Launchpad](https://raw.githubusercontent.com/Blue9/Launchpad/master/screenshots/Launchpad.png "Launchpad in action")
+
 How to use it:
 -
 Each key corresponds to a different sound. Press different keys in the correct order to play the song. The arrow keys will load up different sets of loops (and lighting effects).  
