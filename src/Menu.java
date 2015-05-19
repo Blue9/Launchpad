@@ -1,5 +1,5 @@
 // Copyright GM.
-// bg.jpg acquired from http://sandeep-m.deviantart.com/art/recycled-texture-background-380260449
+// bg.png acquired from http://i.imgur.com/3luEagi.png
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -20,7 +20,7 @@ import javax.swing.border.EmptyBorder;
 
 public class Menu extends JPanel {
 	ImageIcon logoImg = new ImageIcon(Menu.class.getResource("img/logo.png"));
-	ImageIcon bgIcon = new ImageIcon(Menu.class.getResource("img/bg.jpg"));
+	ImageIcon bgIcon = new ImageIcon(Menu.class.getResource("img/bg.png"));
 	Image bg = bgIcon.getImage();
 	JLabel logo;
 	ArrayList<JButton> buttons = new ArrayList<JButton>();
