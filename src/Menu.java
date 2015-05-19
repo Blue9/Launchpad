@@ -3,12 +3,14 @@
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
@@ -54,6 +56,10 @@ public class Menu extends JPanel {
 	
 	public void newButton(String title, String folder) {
 		JButton button = new JButton(title);
+		button.setFont(new Font("Arial", Font.BOLD, 24));
+		button.setForeground(Color.WHITE);
+		button.setBackground(new Color(0, 51, 102));
+		button.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 66), 4));
 		button.setAlignmentX(JButton.CENTER_ALIGNMENT);
 		button.setPreferredSize(new Dimension(800, 100));
 		button.setMaximumSize(new Dimension(800, 100));
@@ -62,6 +68,7 @@ public class Menu extends JPanel {
 				reference.start(folder);
 			}
 		});
+		button.setFocusPainted(false);
 		button.setFocusable(false);
 		buttons.add(button);
 	}
