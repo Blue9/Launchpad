@@ -13,15 +13,14 @@ import javax.swing.border.EmptyBorder;
 public class SidePanel extends JPanel implements KeyListener {
 
 	private static int loop;
-	private JButton intro;
-	private JButton main;
-	private JButton drop;
 	JButton[] buttons;
 	String[] labels;
+	Color[] colors;
 
 	public SidePanel() {
-		buttons = new JButton[] { intro, main, drop };
+		buttons = new JButton[3];
 		labels = new String[] { ">>", "^^", "<<" };
+		colors = new Color[]{ Color.YELLOW, Color.RED, Color.GREEN };
 		setLayout(new GridLayout(3, 1, 0, 150));
 		for (int i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(labels[i]);
@@ -30,6 +29,7 @@ public class SidePanel extends JPanel implements KeyListener {
 			buttons[i].setFocusable(false);
 			add(buttons[i]);
 		}
+		buttons[0].setBackground(colors[0]); // default set
 		setBorder(new EmptyBorder(90, 0, 90, 60));
 		setPreferredSize(new Dimension((Control.height()-330)/3 + 60, Control.height() + 150));
 		setFocusable(false);
@@ -41,6 +41,9 @@ public class SidePanel extends JPanel implements KeyListener {
 	}
 	
 	public void keyPressed(KeyEvent e) {
+		for (int i = 0; i < buttons.length; i++) {
+			buttons[i].setBackground(Color.GRAY);
+		}
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			loop = 0;
 		}
@@ -50,6 +53,7 @@ public class SidePanel extends JPanel implements KeyListener {
 		if (e.getKeyCode() == KeyEvent.VK_LEFT) {
 			loop = 2;
 		}
+		buttons[loop].setBackground(colors[loop]);
 	}
 
 	public void keyReleased(KeyEvent e) {
