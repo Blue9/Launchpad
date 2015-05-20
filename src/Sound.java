@@ -1,6 +1,6 @@
 // Copyright GM.
 
-// Credit to GHET1 for Bangarang samples.
+// Credit to GHET1 for some of the Bangarang samples.
 // Credit to SoNevable for First of the Year samples.
 
 import javax.sound.sampled.AudioSystem;
