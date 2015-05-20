@@ -19,11 +19,17 @@ Each key corresponds to a different sound. Press different keys in the correct o
 z 6 5 6 5 4 z 6 5 7 8 x y u 4 3 \[More coming soon\]
 
 
-- Bangarang \(WIP\):
+- Bangarang:  
 1 z 2 x 3 c 4 v 5 b 6 n 7 m 8 a s d f g h j k i u y t \[LEFT\]  
 \(5 6 7 8 t y 5 u i g h j k\) x3  
 5 6 7 8 t y 5 u i g m ,  
-\(1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w q\) x2 \[More coming soon\]
+\(1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w 1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w q \) x2  
+b \[UP\]  
+1 2 3 4 5 6 7 1 2 3 4 8 z x c v b n m , q n m , 7 n m , q 8 e r t y u i \[RIGHT\]  
+q w e r \[UP\]  
+\(a s d f\) x2  
+g h j k 1 2 3 4 5 6 7 1 2 3 4 8 z x c v b n m , q n m , 7 n m , q 8 z x c v b \[LEFT\]  
+1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w 1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w q n
 
 
 How to add songs:
