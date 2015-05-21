@@ -1,5 +1,4 @@
 // Copyright GM.
-// bg.png acquired from http://i.imgur.com/3luEagi.png
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -59,7 +58,7 @@ public class Menu extends JPanel {
 		button.setFont(new Font("Arial", Font.BOLD, 24));
 		button.setForeground(Color.WHITE);
 		button.setBackground(new Color(0, 51, 102));
-		button.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 66), 4));
+		button.setBorder(BorderFactory.createLineBorder(new Color(0, 0, 48), 4));
 		button.setAlignmentX(JButton.CENTER_ALIGNMENT);
 		button.setPreferredSize(new Dimension(800, 100));
 		button.setMaximumSize(new Dimension(800, 100));
