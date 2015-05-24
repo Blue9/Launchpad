@@ -6,7 +6,7 @@ import java.awt.Color;
 import javax.swing.JPanel;
 
 public class Launchpad extends JPanel {
-	private static Color color = Color.WHITE;
+	private static Color color = new Color(48, 48, 48);
 	
 	private ButtonPanel bp;
 	private SidePanel sp;
@@ -24,7 +24,7 @@ public class Launchpad extends JPanel {
 	}
 
 	public void init(String song) {
-		if (song.equals("")) {        // Default to First of th Year
+		if (song.equals("")) {        // Default to First of the Year
 			Sound.init("foty");
 		}
 		else {

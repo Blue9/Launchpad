@@ -24,7 +24,7 @@ public class SidePanel extends JPanel implements KeyListener {
 		setLayout(new GridLayout(3, 1, 0, 150));
 		for (int i = 0; i < buttons.length; i++) {
 			buttons[i] = new JButton(labels[i]);
-			buttons[i].setBackground(Color.GRAY);
+			buttons[i].setBackground(Color.LIGHT_GRAY);
 			buttons[i].setBorderPainted(false);
 			buttons[i].setFocusable(false);
 			add(buttons[i]);
@@ -42,7 +42,7 @@ public class SidePanel extends JPanel implements KeyListener {
 	
 	public void keyPressed(KeyEvent e) {
 		for (int i = 0; i < buttons.length; i++) {
-			buttons[i].setBackground(Color.GRAY);
+			buttons[i].setBackground(Color.LIGHT_GRAY);
 		}
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			loop = 0;
