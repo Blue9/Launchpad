@@ -16,6 +16,8 @@ Each key corresponds to a different sound. Press different keys in the correct o
     - Second parameter: Name of folder containing sound files (from step 1).
 4. Compile and run.
 
+Note: When compiling, make sure the file paths in `Sound.java`, `Menu.java`, and `LaunchpadButton.java` are correct.
+
 ### Currently included songs:  
 - [Skrillex - First of the Year](https://youtu.be/TYYyMu3pzL4) \(WIP\):  
 1 5 6 7 t y u i t 5 6 7 t y u i j hjj k 5 6 7 8 8 u z x c v b g f d s  
@@ -52,8 +54,7 @@ For example:
 - "10.wav" will be played when set 0 is loaded (default) and when the '1' key is pressed.
 - ",2.wav" will be played when set 2 is loaded (left arrow key) and when the ',' key is pressed.
 
-Note: When compiling, make sure the file paths in `Sound.java`, `Menu.java`, and `LaunchpadButton.java` are correct.
-
+## Disclaimer:  
 This project is neither affiliated with nor endorsed by Novation Digital Music Systems.
 
 Credit to:  
