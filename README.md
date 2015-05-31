@@ -37,6 +37,11 @@ q w e r \[UP\]
 g h j k 1 2 3 4 5 6 7 1 2 3 4 8 z x c v b n m , q n m , 7 n m , q 8 z x c v b \[LEFT\]  
 1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w 1 z 2 x 3 c 4 v a s d f r e 1 z 2 x 3 c 4 v a s d f w q n
 
+- [Wiz Khalifa - See You Again ft. Charlie Puth](https://youtu.be/RgKAFK5djSk):  
+1 8 2 7 3 6 4 5 r t e y w u q i a k s j z , x m c n v b f g d h \[UP\]  
+1 4 5 r t f g v b c n d h e y 3 6 2 7 w u s j 5 r t f g v b c n d h e y 3 6 2 7 w u s \[LEFT\]  
+1 2 q w 3 4 e r a s z x d f
+
 ## File naming:  
 Each sound file will consist of 2 characters. The first character will refer to the key that the sound is mapped to. The second one will refer to the sound set that the sound file should be stored in (0, 1, or 2).
 - Sets:
