@@ -41,6 +41,7 @@ public class Menu extends JPanel {
 		// Usage: newButton(title of song, name of folder containing sound files)
 		newButton("First of the Year", "foty");
 		newButton("Bangarang", "bangarang");
+		newButton("See You Again", "sya");
 		
 		add(logo);
 		for (JButton button : buttons) {
