@@ -55,4 +55,4 @@ For example:
 Note: When compiling, make sure the file paths in `Sound.java`, `Menu.java`, and `LaunchpadButton.java` are correct.
 
 This project is neither affiliated with nor endorsed by Novation Digital Music Systems. Credit to [SoNevable](https://www.youtube.com/user/SoNevable) for First of the Year samples.
-Credit to [GHET1](https://www.youtube.com/channel/UCE65SfxnGGkudvPYlfRobCg) for some Bangarang samples. No copyright infringement intended.
+Credit to [GHET1](https://www.youtube.com/channel/UCE65SfxnGGkudvPYlfRobCg) for some Bangarang samples. Credit to [Green ZL](https://www.youtube.com/user/gzl16) for See You Again samples. No copyright infringement intended.
