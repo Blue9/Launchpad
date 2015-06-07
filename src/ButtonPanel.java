@@ -22,8 +22,8 @@ public class ButtonPanel extends JPanel implements KeyListener {
 			buttons[i] = new LaunchpadButton(keys.substring(i, i + 1).toUpperCase(), LaunchpadButton.released);
 			add(buttons[i]);
 		}
-		setBorder(new EmptyBorder(60, 60, 60, 60));
-		setPreferredSize(new Dimension(Control.height()*2 + 190, Control.height() + 150));
+		setBorder(new EmptyBorder(20, 60, 60, 60));
+		setPreferredSize(new Dimension(Control.height()*2 + 190, Control.height() + 110));
 		setFocusable(false);
 		setBackground(Launchpad.color());
 	}

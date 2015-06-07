@@ -1,6 +1,7 @@
 // Copyright GM.
 
 import java.awt.BorderLayout;
+import java.io.File;
 
 import javax.swing.JFrame;
 
@@ -10,8 +11,8 @@ public class Control extends JFrame {
 	private static int lWidth = (height*2 + 190) + ((height-330)/3 + 60); // ButtonPanel + SidePanel
 	private static int lHeight = height + 150;
 	
-	Menu menu;
-	Launchpad launchpad;
+	private Menu menu;
+	private Launchpad launchpad;
 
 	public Control() {
 		super("BLUE_9 LAUNCHPAD");
@@ -29,10 +30,13 @@ public class Control extends JFrame {
 		new Control();
 	}
 
-	public void start(String s) {
+	public void start(File f) {
 		remove(menu);
-		launchpad = new Launchpad();
-		launchpad.init(s);
+		if (f != null) {
+			launchpad = new Launchpad(f.getAbsolutePath());
+		} else {
+			launchpad = new Launchpad("Default song (Bangarang)");
+		}
 		add(launchpad);
 		launchpad.requestFocusInWindow();
 		pack();

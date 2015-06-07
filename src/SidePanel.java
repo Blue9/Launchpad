@@ -30,8 +30,8 @@ public class SidePanel extends JPanel implements KeyListener {
 			add(buttons[i]);
 		}
 		buttons[0].setBackground(colors[0]); // default set
-		setBorder(new EmptyBorder(90, 0, 90, 60));
-		setPreferredSize(new Dimension((Control.height()-330)/3 + 60, Control.height() + 150));
+		setBorder(new EmptyBorder(50, 0, 90, 60));
+		setPreferredSize(new Dimension((Control.height()-330)/3 + 60, Control.height() + 110));
 		setFocusable(false);
 		setBackground(Launchpad.color());
 	}

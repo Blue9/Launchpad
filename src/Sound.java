@@ -1,5 +1,7 @@
 // Copyright GM.
 
+import java.io.File;
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
@@ -7,28 +9,34 @@ public class Sound {
 	private static Clip[] clips = new Clip[96];
 	private static String keys = "12345678qwertyuiasdfghjkzxcvbnm,";
 	private static boolean initialized = false;
+	private static File wav;
 	
 	public Sound() {
 	}
 
-	public static void init(String song) {
-		try {
-			int index = 0;
-			for (int i = 0; i < 3; i++) {
-				for (int j = 0; j < 32; j++) {
-					index = j + i * 32;
+	public static void init(File dir) {
+		wav = new File("");
+		int index = 0;
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 32; j++) {
+				index = j + i * 32;
+				try {
 					clips[index] = AudioSystem.getClip();
-					try {
-						clips[index].open(AudioSystem.getAudioInputStream(Sound.class.getResourceAsStream("aud/" + song + "/" + keys.charAt(j) + i + ".wav")));
-					} catch (Exception e) {
-						System.out.println("aud/" + song + "/" + keys.charAt(j) + i + ".wav not loaded");
+					
+					if (dir != null) {
+						wav = new File(dir.getAbsolutePath() + "/" + keys.charAt(j) + i + ".wav");
+						clips[index].open(AudioSystem.getAudioInputStream(wav));
+					} else { // Default to Bangarang
+						clips[index].open(AudioSystem.getAudioInputStream(Sound.class.getResource("aud/bangarang" + "/" + keys.charAt(j) + i + ".wav")));
 					}
+					
+					
+				} catch (Exception e) {
+					System.out.println(wav.getAbsolutePath() + " not loaded");
 				}
 			}
-			initialized = true;
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
+		initialized = true;
 	}
 	
 	public static boolean initialized() {
@@ -41,9 +49,7 @@ public class Sound {
 		stop(key);
 		while (clips[index].getFramePosition() != 0 && clips[index].getFramePosition() < clips[index].getFrameLength()) {
 		}
-		if (pressed >= 0) {
-			clips[index].start();
-		}
+		clips[index].start();
 	}
 	
 	public static void stop(char key) {
