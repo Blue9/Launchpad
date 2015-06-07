@@ -6,17 +6,14 @@ A mini-replica of the Novation Launchpad built using Java.
 ![Launchpad](https://raw.githubusercontent.com/Blue9/Launchpad/master/screenshots/Launchpad.png "Launchpad in action")
 
 ## How to use it:  
-Each key corresponds to a different sound. Press different keys in the correct order to play the song. The arrow keys will load up different sets of loops (and lighting effects).  
+1. Browse for a project folder.
+2. Click start.
+3. Each key corresponds to a different sound. Press different keys in the correct order to play the song. The arrow keys will load up different sets of loops (and lighting effects).
 
 ## How to add songs:  
-1. Create a new folder in the `/aud` directory.
+1. Create a new folder.
 2. Add sound files in the WAV format (See "File naming").
-3. In `Menu.java`, call `newButton(String, String)` in the constructor (around line 41).
-    - First parameter: Name of song (displayed on button).
-    - Second parameter: Name of folder containing sound files (from step 1).
-4. Compile and run.
-
-Note: When compiling, make sure the file paths in `Sound.java`, `Menu.java`, and `LaunchpadButton.java` are correct.
+3. Run the application and browse for the folder you just created.
 
 ### Currently included songs:  
 - [Skrillex - First of the Year](https://youtu.be/TYYyMu3pzL4) \(WIP\):  
@@ -54,12 +51,4 @@ For example:
 - "10.wav" will be played when set 0 is loaded (default) and when the '1' key is pressed.
 - ",2.wav" will be played when set 2 is loaded (left arrow key) and when the ',' key is pressed.
 
-## Disclaimer:  
-This project is neither affiliated with nor endorsed by Novation Digital Music Systems.
-
-Credit to:  
-- [SoNevable](https://www.youtube.com/user/SoNevable) for First of the Year samples
-- [GHET1](https://www.youtube.com/channel/UCE65SfxnGGkudvPYlfRobCg) for some Bangarang samples
-- [Green ZL](https://www.youtube.com/user/gzl16) for some See You Again samples
-
-No copyright infringement intended.
+**Disclaimer:** This project is neither affiliated with nor endorsed by Novation Digital Music Systems.
