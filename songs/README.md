@@ -25,5 +25,5 @@ zc
 
 Credit to:  
 - [SoNevable](https://www.youtube.com/user/SoNevable) for First of the Year samples
-- Credit to [GHET1](https://www.youtube.com/channel/UCE65SfxnGGkudvPYlfRobCg) for Kyoto samples
+- [GHET1](https://www.youtube.com/channel/UCE65SfxnGGkudvPYlfRobCg) for Kyoto samples
 - [Green ZL](https://www.youtube.com/user/gzl16) for some See You Again samples
